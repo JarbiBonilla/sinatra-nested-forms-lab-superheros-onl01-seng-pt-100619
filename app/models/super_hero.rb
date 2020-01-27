@@ -1,8 +1,10 @@
 class SuperHero
   attr_accessor :name, :power, :bio
+  
+  @@all = []
 
   def self.all
-    @@all ||= []
+    @@all 
   end
 
   def initialize(opts={})
